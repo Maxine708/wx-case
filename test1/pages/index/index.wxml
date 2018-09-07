@@ -1,0 +1,31 @@
+<!--index.wxml-->
+<view class="container" >
+  
+  
+  <scroll-view  class="list_scroll" scroll-y="true"  bindscroll="scrollTopFun" scroll-top="{{scrollTop.scroll_top}}"
+  bindscrolltolower="scrolltolowerFun">
+    <view class="loading" hidden="{{hideloading}}">
+      <image src="images/icon.png" class="icon"></image><text>正在努力加载中</text>
+    </view>
+    <view wx:for="{{lists}}" wx:for-index="id" wx:for-item="itemName" wx:key="key" class="lists"   >
+      <view >
+          <image src="{{itemName.cover.url}}" class="artimg" bindtap="goTo" data-topicId="{{itemName.topicId}}"></image>
+      </view>
+      <view class="arttitle" bindtap="goTo" data-topicId="{{itemName.topicId}}">{{itemName.title}}</view>
+      <view class="artdes" bindtap="goTo" data-topicId="{{itemName.topicId}}">{{itemName.synopsis}}</view>
+      <view class="artall">
+        <image src="images/per.jpg" class="per"></image>
+        <text class="author">{{itemName.createBy}}</text>
+        <text class="time">{{itemName.createAt}}</text>
+      </view>
+    </view>
+    <view class="last" wx:if="{{is_last}}">已经是最后一页了</view>
+    <view wx:if="{{scrollTop.goTop_show}}" catchtap="goTopFun"><image class="top" src="images/top.png" ></image></view>
+
+  </scroll-view>
+</view>
+<view class="header">
+    <view  wx:for="{{navlist}}"  wx:for-item="navName"  class="nav">
+      <view data-typeId="{{navName.typeId}}"  bindtap="getTypeId" class="{{navhover}}">{{navName.name}}</view>
+    </view>
+  </view>

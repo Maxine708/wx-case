@@ -1,0 +1,13 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/detail/detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ff4c4c",
+    "navigationBarTitleText": "聚超值原创精选",
+    "navigationBarTextStyle": "white"
+  }
+}

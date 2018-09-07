@@ -1,0 +1,33 @@
+/* detail.wxss */
+.d_wrap{
+    padding:30px;
+     font-family: "Microsoft Yahei";
+}
+.d_header{
+    border-bottom: 2rpx solid #999999
+}
+.d_title{
+    font-size: 38rpx;
+    line-height: 50rpx;
+    color: #555555;
+}
+.d_price{
+    font-size: 38rpx;
+    line-height: 50rpx;
+    font-weight: 900;
+    color: #ff4c4c;
+}
+.d_createBy, .d_createAt{
+     font-size: 22rpx;
+    line-height: 50rpx;
+    color: #999999;
+    padding-bottom: 60rpx;
+}
+.d_createAt{
+    float: right;
+}
+.d_text{
+     font-size: 34rpx;
+    line-height: 66rpx;
+    color: #555555;
+}

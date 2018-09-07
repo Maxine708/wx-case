@@ -1,0 +1,99 @@
+/**index.wxss**/
+.header{
+   width: 100%;
+  height: 100rpx;
+  border-bottom: 1rpx solid #999999;
+  background: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.nav{
+ 
+  display: inline-block;
+  height: 100rpx;
+  line-height: 100rpx;
+  margin: 0 25rpx;
+  font-size: 28rpx;
+  color: #ff4c4c;
+   border-bottom: 1rpx solid #ff4c4c;
+
+}
+.nav-hover{
+   color: #999999;
+  border-bottom: 1rpx solid #999999;
+
+}
+.lists{
+  background: #ffffff
+}
+.artimg{
+  width: 100%;
+  height: 300rpx;
+}
+.arttitle{
+  font-size: 28rpx;
+  line-height: 40rpx;
+  margin: 15rpx;
+}
+.artdes, .artall{
+  color:#999999;
+  font-size: 22rpx;
+  line-height: 34rpx;
+  margin: 15rpx;
+}
+.artall{
+    padding-bottom: 20rpx;
+}
+.list_scroll{
+  padding: 115rpx;
+  height: 1200rpx;
+}
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+.time{
+  float: right
+}
+.top{
+  width: 80rpx;
+  height: 80rpx;
+  position: fixed;
+  right: 10rpx;
+  bottom: 10rpx;
+}
+.icon{
+  display:inline-block;
+  
+  width:16px;height:16px;
+  animation:rotate 1.5s linear 0s normal none infinite ;
+  -webkit-animation:rotate 1.5s linear 0s normal none infinite ;}
+
+@-webkit-keyframes rotate{
+    from{-webkit-transform:rotate(0deg)}
+    to{-webkit-transform:rotate(360deg)}
+}
+@keyframes rotate{
+    from{transform:rotate(0deg)}
+    to{transform:rotate(360deg)}
+}
+.loading{
+  font-size: 40rpx;
+  line-height: 60rpx;
+  height: 60rpx;
+  color:#999999;
+  text-align: center
+  
+}
+.per{
+  display: inline-block;
+  width:20rpx ;
+  height: 34rpx;
+}
+.author{
+    padding-left: 10rpx;
+    
+}

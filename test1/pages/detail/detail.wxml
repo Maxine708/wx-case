@@ -1,0 +1,17 @@
+<!--detail.wxml-->
+<view class="d_wrap">
+<view class="d_header">
+<view class="d_title">{{detailData.title}}</view>
+<view class="d_price">{{detailData.price}}</view>
+<view><text class="d_createBy">{{detailData.createBy}}</text><text class="d_createAt">{{detailData.createAt}}</text>
+</view>
+</view>
+<view wx:for="{{detailData.content}}" wx:for-item="dataName" >
+    <view wx:if="{{dataName.canJoin}}=='false'" >
+        <view wx:if="{{dataName.type==1}}" class="d_text">{{dataName.text}}</view>
+        <view wx:if="{{dataName.type==2}}"  class="d_image"><image src="{{dataName.image.url}}"></image></view>
+    </view>
+   
+</view>
+</view>
+
